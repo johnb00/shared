@@ -1,0 +1,4 @@
+Microsoft-Hyper-V-All
+TelnetClient
+VirtualMachinePlatform
+HypervisorPlatform
