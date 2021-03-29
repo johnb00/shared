@@ -1,2 +1,2 @@
-# shared
-A small collection of scripts and modules
+# Shared Repo
+Public collection of scripts and modules
