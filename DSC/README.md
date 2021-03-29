@@ -1,4 +1,4 @@
-# DSC
+# PowerShell Desired State Configuration
 Win10ProConfig.ps1 - Tested on Windows 10 Pro Version 20H2
 
 A simple DSC configuration to install Windows Features on Workstations using Custom Script Resources.
