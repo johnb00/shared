@@ -1,4 +1,5 @@
 # Windows 10 Pro Configuration
+# Creates C:\Temp and installs features listed in Win10ProFeatures.txt
 
 # PreReq - Open elevated PowerShell command prompt and run:
     # Set-WSManQuickConfig (or 'winrm quickconfig')
@@ -14,8 +15,8 @@
 # To remove any existing DSC configurations:
     # Remove-DscConfigurationDocument -Stage Current,Pending,Previous -Force -Verbose
 
-    # Import list of Windows Features
-$Win10ProFeatures = Get-Content ".\Win10ProFeatures.txt"
+# Import list of Windows Features
+$Win10ProFeatures = Get-Content "C:\Git\shared\DSC\Win10ProFeatures.txt"
 # Start Configuration
 Configuration Win10Pro {
     # Import DSC Module
@@ -81,7 +82,7 @@ Configuration Win10Pro {
         #endregion Local Configuration Manager
     }
 }
-# Call the configuration to compile it into a MOF file
+# Call the configuration to compile it into a MOF file (C:\DSC must exist)
 Win10Pro -OutputPath C:\DSC\Win10Pro
 # Apply the configuration to the localhost using the path of the MOF file
 # Run this in an elevated PowerShell command window or PowerShell ISE (does not work if running from VS Code)
