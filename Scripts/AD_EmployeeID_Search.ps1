@@ -4,7 +4,8 @@ Import-Module ActiveDirectory
 $employeeID = Read-Host "Enter Employee ID to search for"
 Get-ADUser -Filter {employeeID -eq $employeeID} -Properties employeeID | Out-GridView
 
-<# Alternative Script to view results in a Console Window, one at a time
+# Alternative Script to view results in a Console Window, one at a time
+<#
 Import-Module ActiveDirectory
 $employeeID = Read-Host "Enter Employee ID to search for"
 $employeeID_Results = Get-ADUser -Filter {employeeID -eq $employeeID} -Properties employeeID
