@@ -1,4 +1,4 @@
-# Active Directory Search Module
+# Active Directory Attribute Search Module
 # Enter an Active Directory attribute name with a value to search for and display the results either in a GridView window or the Console
 # Note: The attribute name must be spelled correctly and work with the -Filter switch
 # Example usage:
